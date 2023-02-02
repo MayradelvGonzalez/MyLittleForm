@@ -2,8 +2,44 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
 }
 
 #box {
     background-color: greenyellow;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 0.6em;
+    width: 90%;
+    height: 75%;
+
+
+}
+
+.box-form {
+    color: black;
+    border: 0.2em rgb(186, 186, 122) outset;
+    border-radius: 0.5em 0.5em 0 0;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title-form {
+    margin-top: 0;
+    margin-left: center;
 }
