@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+/* body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    font-family: "lato", sans-seriff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  } */
+
 main {
     background-color: yellow;
     display: flex;
@@ -12,34 +23,77 @@ main {
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 100vh;
+    padding: 2em;
 }
 
 #box {
     background-color: greenyellow;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     border-radius: 0.6em;
-    width: 90%;
-    height: 75%;
-
-
+    border: 1em solid black;
+    margin: 3em;
 }
 
 .box-form {
     color: black;
+    background-color: violet;
     border: 0.2em rgb(186, 186, 122) outset;
-    border-radius: 0.5em 0.5em 0 0;
     width: 90%;
-    height: 20%;
     display: flex;
+    flex-direction: column;
+    margin: 20px 0;
     justify-content: center;
     align-items: center;
-
+    padding: 2em;
+    margin: 3em;
 }
 
 .title-form {
     margin-top: 0;
     margin-left: center;
+}
+
+#searchInput {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 1em;
+}
+
+/* Cuando el input gane el foco, se agregará un borde azul en la parte inferior */
+
+#searchInput:focus {
+    border-bottom: 2px solid #4575b6;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 5px 7px gray;
+}
+
+/* Establece una sombra en la cabeza de la tabla */
+thead {
+    box-shadow: 0px 0px 10px gray;
+}
+th {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+td {
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+}
+
+
+tr:nth-child(even) {
+    background-color: #dee8f5;
 }
